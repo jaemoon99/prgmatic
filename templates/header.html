@@ -11,8 +11,11 @@
             <span>login</span>
         </a>
         {% else %}
+        <a href="{% url 'accountapp:detail' pk=user.pk %}">
+            <span>MyPage</span>
+        </a>
         <a href="{% url 'accountapp:logout' %}">
-            <span>logout</span>
+            <span>Logout</span>
         </a>
         {% endif %}
     </div>
