@@ -6,9 +6,7 @@ RUN git clone https://github.com/jaemoon99/prgmatic.git
 
 WORKDIR /home/pragmatic/
 
-COPY requirements.txt /tmp/requirements.txt
-
-RUN python3 -m pip install -r /tmp/requirements.txt
+RUN pip install -r requirements.txt
 
 RUN echo "SECRET_KEY=django-insecure-gy0*zs331y*-3__0yc_s=4z#7@bd*6$t_=l%!ahd)#cb#d26&#" > .env
 
